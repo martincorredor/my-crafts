@@ -1,13 +1,179 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --sour-gummy-font: 'Sour Gummy', sans-serif;
+  --shadows-font: 'Shadows Into Light', sans-serif;
+  --mulish-font: 'Mulish', serif;
+  --color-yellow: #feb94f;
+  --color-dark-green: #114f41;
+  --color-green: #58d68d;
+  --color-dark-grey: #1c2833;
+  --color-light-grey: #e7eae0;
+  --color-superLight-grey: #e9e3d3;
+  --color-light-blue: #78c2e4;
+  --color-coffee: #9f4420;
+  --color-orange: #e98231;
+  --color-orange-cookey: #eca350;
+  --color-white: #fff;
+  --color-black: #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--sour-gummy-font);
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ------------------------------ HomePage ------------------------------------ */
+
+.homepage-section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-yellow);
+  position: relative;
+  padding: 20px;
+}
+
+.home-content {
+  width: 100%;
+  height: 90vh;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-title {
+  font-weight: 800;
+  font-size: 20vw;
+  color: var(--color-white);
+  position: relative;
+  top: 5%;
+  text-align: center;
+}
+
+.home-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  padding: 10px;
+  position: relative;
+}
+
+.custom-icon {
+  padding: 5px;
+  border-radius: 40%;
+  border: 2px solid var(--color-black);
+  width: 45px !important;
+  height: 45px !important;
+  cursor: pointer;
+  transition: all 5s ease;
+}
+
+.custom-icon:hover {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.image-slider {
+  width: 80vw;
+  height: 70vh;
+  position: absolute;
+  top: 20vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-image {
+  position: absolute;
+  width: auto;
+  height: 70vh;
+  transition: opacity 0.5s;
+}
+
+.home-image.enter {
+  animation: showImage 1s forwards;
+}
+
+.home-image.exit {
+  animation: outFrame 1s forwards;
+}
+
+@keyframes showImage {
+  from {
+    opacity: 0;
+    transform: translateX(100%) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes outFrame {
+  from {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%) scale(0.6);
+  }
+}
+
+/* ------------------------------ Galery ------------------------------------ */
+
+
+
+
+/* -------------------------- Responsive Design ------------------------------------*/
+@media (max-width: 768px) {
+  .homepage-section {
+    overflow: hidden;
+  }
+
+  .home-title {
+    font-size: 25vw;
+    top: 15%;
+  }
+
+  .home-content {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .image-slider {
+    width: 90vw;
+    height: 70vh;
+    position: absolute;
+    top: 25vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .home-image {
+    width: 100%;
+    height: auto;
+  }
 }
