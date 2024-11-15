@@ -44,6 +44,7 @@ body {
   background-color: var(--color-light-blue);
   position: relative;
   padding: 20px;
+  margin-bottom: 70px;
 }
 
 .home-content {
@@ -215,8 +216,16 @@ body {
   padding: 20px;
 }
 
+.filter-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 10px auto;
+}
+
 .show-all-button {
-  margin: 20px auto;
   width: 200px;
   height: 40px;
   background-color: var(--color-green);
@@ -233,12 +242,23 @@ body {
   transform: scale(1.07);
 }
 
+.search-input {
+  width: 30vw;
+  max-width: 400px;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 20px;
+  font-family: var(--sour-gummy-font);
+  font-size: 1.1rem;
+}
+
 .filter-section-boxes-container {
   display: flex;
   flex-direction: row;
-  width: 90%;
-  justify-content: space-around;
+  width: 70%;
+  justify-content: space-between;
   align-items: start;
+  margin: 2px auto;
 }
 
 .filter-box-canastos {
@@ -443,6 +463,24 @@ body {
     margin-top: 30px;
     padding: 20px;
   }
+
+  .filter-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: 10px auto; */
+  }
+
+  .show-all-button {
+    width: 35vw;
+  }
+
+  .search-input {
+    width: 50vw;
+  }
+
   .filter-section-boxes-container {
     display: flex;
     flex-direction: column;
