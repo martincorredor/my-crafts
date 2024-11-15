@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import HomeMenu from './HomeMenu';
+import { Icon, IconButton } from '@mui/material';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const HomePage = ({ images }) => {
+  const whatsappNumber = '573212002638';
+  const message =
+    'Hola!! Estoy interesado en comprar uno de tus productos, quiero más información';
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imageList = [
     './c1.jpg',
@@ -25,9 +30,18 @@ const HomePage = ({ images }) => {
     <div className="homepage-section">
       <div className="home-content">
         <h1 className="home-title">CRAFTS!</h1>
-        <div className="home-footer">
-          <p>Píde los que desees a través de nuestro WhatsApp</p>
-          <HomeMenu />
+        <div className='home-footer'>
+          Contáctanos por WhatsApp para tener el gusto de atenderte
+          <a
+            href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+              message
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-link"
+          >
+            <Icon component={WhatsAppIcon} />
+          </a>
         </div>
       </div>
       <div className="image-slider">

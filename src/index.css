@@ -66,13 +66,20 @@ body {
 }
 
 .home-footer {
+  text-align: center;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1200px;
-  padding: 10px;
+  gap: 3px;
+}
+
+.whatsapp-link {
+  text-decoration: none;
+  color: var(--color-green);
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding: 3px;
 }
 
 .custom-icon {
@@ -82,7 +89,7 @@ body {
   width: 45px !important;
   height: 45px !important;
   cursor: pointer;
-  transition: all 5s ease;
+  transition: all 0.3s ease;
   font-weight: 800;
 }
 
@@ -340,8 +347,8 @@ body {
   }
 
   .image-slider {
-    width: 90vw;
-    height: 70vh;
+    max-width: 90vw;
+    height: 50vh;
     position: absolute;
     top: 25vh;
     overflow: hidden;
@@ -354,6 +361,21 @@ body {
   .home-image {
     width: 100%;
     height: auto;
+  }
+
+  .home-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .whatsapp-link {
+    text-decoration: none;
+    color: var(--color-green);
+    background-color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 3px;
   }
 
   .product-gallery {

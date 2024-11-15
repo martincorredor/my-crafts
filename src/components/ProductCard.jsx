@@ -4,6 +4,10 @@ import CustomIcon from './CustomIcon';
 import { COLORS } from '../constants';
 
 const ProductCard = ({ product, image, onClose }) => {
+  const whatsappNumber = '573212002638'; // Reemplaza con tu número
+  const message = `Vi este producto en tu página y me encantó, lo quiero adquirir: 
+    Un ${product.name}, con estas medidas: ${product.mesures}`;
+
   return (
     <Modal
       open={!!product}
@@ -29,7 +33,16 @@ const ProductCard = ({ product, image, onClose }) => {
         </div>
         <div className="modal-whatsApp-content">
           <span>Pídelo a través de nuestro whatsApp</span>
-          <CustomIcon icon={'whatsApp'} color={COLORS.black} />
+          <a
+            href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+              message
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-link"
+          >
+            <CustomIcon icon={'whatsApp'} color={COLORS.black} />
+          </a>
         </div>
       </Box>
     </Modal>
