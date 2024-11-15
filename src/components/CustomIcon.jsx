@@ -4,6 +4,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CloseIcon from '@mui/icons-material/Close';
 import SearchIcon from '@mui/icons-material/Search';
 
+// border: `solid 3px ${color}`
+
 const CustomIcon = ({ icon, color }) => {
   const icons = {
     whatsApp: WhatsAppIcon,
@@ -17,7 +19,7 @@ const CustomIcon = ({ icon, color }) => {
     <Icon
       component={IconComponent}
       className="custom-icon"
-      sx={{ color: color || 'inherit',  }}
+      sx={{ color: color || 'inherit', }}
     />
   );
 };
