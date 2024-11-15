@@ -151,8 +151,8 @@ body {
 }
 
 .gallery-card {
-  width: 200px; 
-  height: auto; 
+  width: 200px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,9 +187,83 @@ body {
   font-size: 1.3rem;
   font-weight: 800;
   text-align: center;
-  
 }
 
+/* ------------------------------ Filter ------------------------------------ */
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 10vh;
+  padding: 20px;
+}
+
+.show-all-button {
+  margin: 20px auto;
+  width: 200px;
+  height: 40px;
+  background-color: var(--color-green);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--color-white);
+  font-weight: 600;
+  font-family: var(--mulish-font);
+  transition: all 0.3s ease;
+}
+
+.show-all-button:hover {
+  transform: scale(1.07);
+}
+
+.filter-section-boxes-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.filter-box-canastos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.filter-box-canastos-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-box-pantallas {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.filter-box-title {
+}
+
+.filter-button {
+  width: 100px;
+  height: 30px;
+  background-color: var(--color-light-blue);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--color-white);
+  font-weight: 600;
+  font-family: var(--mulish-font);
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  transform: scale(1.1);
+}
 
 /* ------------------------------ Modal ------------------------------------ */
 
@@ -202,12 +276,13 @@ body {
   max-width: 400px;
   height: 80vh;
   max-height: 800px;
-  background-color: var(--color-orange);
+  background-color: var(--color-light-blue);
   padding: 20px;
   border-radius: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   outline: none;
   text-align: center;
+  color: var(--color-white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -230,8 +305,8 @@ body {
 .modal-product-name {
   font-size: 2.1rem !important;
   font-weight: 800 !important;
-  color: var(--color-white);
   font-family: var(--sour-gummy-font) !important;
+  color: var(--color-orange);
 }
 
 .modal-product-measures {
@@ -247,8 +322,6 @@ body {
   justify-content: space-between;
   width: 90%;
 }
-
-
 
 /* -------------------------- Responsive Design ------------------------------------*/
 @media (max-width: 768px) {
@@ -307,5 +380,16 @@ body {
 
   .modal-product-name {
     font-size: 1.7rem !important;
+  }
+
+  .filter-section {
+    max-width: 100%;
+  }
+  .filter-section-boxes-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    justify-content: space-around;
+    gap: 20px;
   }
 }

@@ -29,7 +29,7 @@ const ProductCard = ({ product, image, onClose }) => {
         </div>
         <div className="modal-whatsApp-content">
           <span>Pídelo a través de nuestro whatsApp</span>
-          <CustomIcon icon={'whatsApp'} color={COLORS.green} />
+          <CustomIcon icon={'whatsApp'} color={COLORS.black} />
         </div>
       </Box>
     </Modal>

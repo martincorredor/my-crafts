@@ -1,3 +1,5 @@
+import { SIZES, TYPES } from './constants';
+
 export const products = [
   {
     id: 'c1',
@@ -6,6 +8,8 @@ export const products = [
     prix: 10000,
     userPrix: 18000,
     imageUrl: '',
+    type: TYPES.CANASTO,
+    size: SIZES.SMALL,
   },
   {
     id: 'c2',
@@ -14,6 +18,8 @@ export const products = [
     prix: 12000,
     userPrix: 20000,
     imageUrl: '',
+    type: TYPES.CANASTO,
+    size: SIZES.MEDIUM,
   },
   {
     id: 'c3',
@@ -22,6 +28,8 @@ export const products = [
     prix: 10000,
     userPrix: 18000,
     imageUrl: '',
+    type: TYPES.CANASTO,
+    size: SIZES.SMALL,
   },
   {
     id: 'c4',
@@ -30,6 +38,8 @@ export const products = [
     prix: 12000,
     userPrix: 20000,
     imageUrl: '',
+    type: TYPES.CANASTO,
+    size: SIZES.SMALL,
   },
   {
     id: 'c5',
@@ -38,6 +48,8 @@ export const products = [
     prix: 18000,
     userPrix: 30000,
     imageUrl: '',
+    type: TYPES.PANTALLA,
+    size: SIZES.SMALL,
   },
   {
     id: 'c6',
@@ -46,5 +58,7 @@ export const products = [
     prix: 15000,
     userPrix: 30000,
     imageUrl: '',
+    type: TYPES.CANASTO,
+    size: SIZES.LARGE,
   },
 ];

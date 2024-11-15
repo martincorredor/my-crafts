@@ -12,3 +12,14 @@ export const COLORS = {
   white: '#fff',
   black: '#000',
 };
+
+export const TYPES = {
+  CANASTO: 'canasto',
+  PANTALLA: 'pantalla',
+}
+
+export const SIZES = {
+  SMALL: 'small',
+  MEDIUM: 'medium',
+  LARGE: 'large',
+}
