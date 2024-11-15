@@ -12,7 +12,7 @@ const HomePage = ({ images }) => {
     './c1.jpg',
     './c2.jpg',
     './c3.jpg',
-    './c4.jpg',
+    './c76.jpg',
     './c5.jpg',
     './c6.jpg',
   ];
@@ -29,7 +29,7 @@ const HomePage = ({ images }) => {
   return (
     <div className="homepage-section">
       <div className="home-content">
-        <h1 className="home-title">CRAFTS!</h1>
+        <h1 className="home-title">GAITA CRAFTS!</h1>
         <div className='home-footer'>
           Contáctanos por WhatsApp para tener el gusto de atenderte
           <a
