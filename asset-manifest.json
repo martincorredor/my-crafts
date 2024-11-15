@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-crafts/static/css/main.f394c0e3.css",
-    "main.js": "/my-crafts/static/js/main.7282d44b.js",
+    "main.js": "/my-crafts/static/js/main.c555ad33.js",
     "static/media/c6.jpg": "/my-crafts/static/media/c6.a13135033b90e0a8fd57.jpg",
     "static/media/c4.jpg": "/my-crafts/static/media/c4.a19a58ebb671649ff365.jpg",
     "static/media/c5.jpg": "/my-crafts/static/media/c5.2641bdebd8482610b634.jpg",
@@ -10,10 +10,10 @@
     "static/media/c2.jpg": "/my-crafts/static/media/c2.d661ed257a8fdfcc695f.jpg",
     "index.html": "/my-crafts/index.html",
     "main.f394c0e3.css.map": "/my-crafts/static/css/main.f394c0e3.css.map",
-    "main.7282d44b.js.map": "/my-crafts/static/js/main.7282d44b.js.map"
+    "main.c555ad33.js.map": "/my-crafts/static/js/main.c555ad33.js.map"
   },
   "entrypoints": [
     "static/css/main.f394c0e3.css",
-    "static/js/main.7282d44b.js"
+    "static/js/main.c555ad33.js"
   ]
 }
