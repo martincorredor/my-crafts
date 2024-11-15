@@ -23,3 +23,11 @@ export const SIZES = {
   MEDIUM: 'medium',
   LARGE: 'large',
 }
+
+export const CATEGORIES = {
+  HOGAR: 'hogar',
+  DECORACION: 'decoración',
+  RESTAURANTE: 'restaurante',
+  OFICINA: 'oficina',
+  PANADERIA: 'panadería',
+}
