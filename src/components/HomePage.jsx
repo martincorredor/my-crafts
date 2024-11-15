@@ -38,7 +38,7 @@ const HomePage = ({ images }) => {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="whatsapp-link"
+            className="whatsapp-link home-w-link"
           >
             <Icon component={WhatsAppIcon} />
           </a>

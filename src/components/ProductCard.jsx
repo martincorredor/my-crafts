@@ -41,7 +41,7 @@ const ProductCard = ({ product, image, onClose }) => {
             rel="noopener noreferrer"
             className="whatsapp-link"
           >
-            <CustomIcon icon={'whatsApp'} color={COLORS.black} />
+            <CustomIcon icon={'whatsApp'} color={COLORS.green} />
           </a>
         </div>
       </Box>
