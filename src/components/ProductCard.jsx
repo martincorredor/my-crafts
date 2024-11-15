@@ -4,7 +4,7 @@ import CustomIcon from './CustomIcon';
 import { COLORS } from '../constants';
 
 const ProductCard = ({ product, image, onClose }) => {
-  const whatsappNumber = '573212002638'; // Reemplaza con tu número
+  const whatsappNumber = '573224682353'; // Reemplaza con tu número
   const message = `Vi este producto en tu página y me encantó, lo quiero adquirir: 
     Un ${product.name}, con estas medidas: ${product.mesures}`;
 

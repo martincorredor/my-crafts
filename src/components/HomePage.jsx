@@ -4,7 +4,7 @@ import { Icon, IconButton } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const HomePage = ({ images }) => {
-  const whatsappNumber = '573212002638';
+  const whatsappNumber = '573224682353';
   const message =
     'Hola!! Estoy interesado en comprar uno de tus productos, quiero más información';
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
