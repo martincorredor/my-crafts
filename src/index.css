@@ -379,9 +379,9 @@ body {
 
   .image-slider {
     width: 100vw;
-    height: 45vh;
+    height: 50vh;
     position: absolute;
-    top: 22vh;
+    top: 25vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
