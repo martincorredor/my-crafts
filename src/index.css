@@ -59,7 +59,8 @@ body {
 
 .home-title {
   font-weight: 1000;
-  font-size: 12vw;
+  font-size: 16vw;
+  line-height: 12vw;
   color: var(--color-white);
   position: relative;
   top: 5%;
@@ -71,6 +72,7 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
+  color: var(--color-black);
 }
 
 .whatsapp-link {
@@ -377,7 +379,7 @@ body {
 
   .image-slider {
     width: 100vw;
-    height: 60vh;
+    height: 45vh;
     position: absolute;
     top: 22vh;
     overflow: hidden;
@@ -388,8 +390,8 @@ body {
   }
 
   .home-image {
-    width: 90%;
-    height: auto;
+    width: auto;
+    height: 100%;
   }
 
   .home-footer {
